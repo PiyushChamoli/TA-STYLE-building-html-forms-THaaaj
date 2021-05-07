@@ -1,0 +1,218 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*Custom Style*/
+
+/*General*/
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+.sub-container{
+    max-width: 800px;
+    margin: 0 auto;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.flex-50{
+    flex: 0 1 48%;
+}
+a{
+    text-decoration: none;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5;
+}
+main{
+    background-color: #E6E6E6;
+}
+
+/*Header*/
+
+.header .container{
+    padding: 22px 80px;
+}
+.head-left h1{
+    display: inline;
+    font-size: 27px;
+    font-weight: 700;
+    margin-left: 13px;
+    text-transform: uppercase;
+}
+.head-left{
+    display: flex;
+    align-items: center;
+}
+.head-right li{
+    margin-right: 35px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/*Hero-section*/
+
+.hero-section{
+    background:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.4)) ,url(assets/banner.jpg) no-repeat;
+    height: 85vh;
+    background-size: cover;
+    text-align: center;
+}
+.hero-section h2{
+    font-size: 37px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+.hero-section p{
+    font-size: 20px;
+    color: #ffffff;
+}
+.hero-section i{
+    font-size: 18px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #69C6BA;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form{
+    padding: 20px;
+    background-color: #F5F5F5;
+}
+.hero-section .ft1{
+    justify-content: flex-start;
+}
+
+
+/*
+<input class="form-control" type="text" id="destination" name="destination" placeholder="Type your destination...">
+<select name="room" id="room">
+<option value="1 Room">1 Room</option>
+<option value="2 Room">2 Room</option>
+<option value="3 Room">3 Room</option>
+</select>
+<select name="Adult" id="Adult">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                            <select name="Children" id="Children">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                        </select>
+*/
+
+.sec-two{
+    background-color: #EFEFEF;
+    padding: 20px 0;
+    text-align: center;
+}
+.sec-two p{
+    font-size: 14px;
+    padding: 15px 0;
+}
+
+.sec-three-left img{
+    width: 100%;
+}
+.sec-three-right i{
+    padding: 8px;
+    background-color: rgba(0,0,0,0.4);
+} 
+.sec-three-right-div{
+    padding: 20px;
+    background-color: #69C6BA;
+    color: #ffffff;
+}
+.sec-three-right{
+    position: relative;
+    left: -150px;
+}
+
+.flex-20{
+    flex: 0 1 19%;
+}
+.flex-60{
+    flex: 0 1 55%;
+}
+.sec-four{
+    background-color: #ffffff;
+}
+.sec-four-one{
+    border: 5px solid #F8F8F8;
+}
+.sec-four-left img{
+    width: 100%;
+}
+.sec-four-middle{
+    padding: 0 15px;
+    font-size: 13px;
+}
+.sec-four-one{
+    height: 200px;
+}
+
+.sec-four-right{
+    background-color: #69C6BA;
+}
+.sec-four-right img{
+    font-size: ;
+}

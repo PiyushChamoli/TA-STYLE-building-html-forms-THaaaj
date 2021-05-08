@@ -26,89 +26,288 @@
         </div>
     </header>
     <main>
-        <section class="container">
-            <div class="hero-section">
-                <div>
-                    <h2>Lets Begin</h2>
-                    <img src="assets/dots-3.png" alt="dots-3">
-                    <p>We assit you to choose the best</p>
-                    <i class="fas fa-chevron-down"></i>
-                </div>
-                <form class="sub-container" action="index.html" method="POST">
-                    <fieldset>
-                        <div class="flex">
-                            <div class="flex-50 ft1">
-                                <label for="destination">Choose Your Destination</label>
+        <div class="container">
+            <section class="hero-section">
+                <h2>
+                    Let's begin
+                </h2>
+                <img src="assets/dots-3.png" alt="dots-3">
+                <h4>
+                    We assist you to choose the best.
+                </h4>
+                <i class="fas fa-chevron-down"></i>
+                <form class="sub-container flex item-start" action="" method="post">
+                    <fieldset class="flex-50">
+                        <label for="destination">Choose Your Destination</label>
+                        <input class="form-control" type="text" name="destination" id="destination" placeholder="Type your destination...">
+                        <div class="flex margin-top">
+                            <div>
+                                <label for="check-in">Check In Date</label>
+                                <input class="form-control" type="date" name="check-in" id="check-in">
                             </div>
-                            <div class="flex-50 ft1">
-                                <label for="room">How many rooms?</label>
-                                <label for="Adult">Adult</label>
-                                <label for="Children">Children</label>
+                            <div>
+                                <label for="check-out">Check Out Date</label>
+                                <input class="form-control" type="date" name="check-out" id="check-out">
                             </div>
                         </div>
                     </fieldset>
+                    <fieldset class="flex-50">
+                        <div class="flex">
+                            <div>
+                                <label for="room">How Many Rooms?</label>
+                                <select class="form-control" name="room" id="room">
+                                    <option value="1 Room">1 Room</option>
+                                    <option value="2 Room">2 Room</option>
+                                    <option value="3 Room">3 Room</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="adult">Adult</label>
+                                <select class="form-control" name="adult" id="adult">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="children">Children</label>
+                                <select class="form-control" name="children" id="children">
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                </select>
+                            </div>
+                        </div>
+                        <input class="btn btn-primary margin-top" type="submit" value="Check Availibility">
+                    </fieldset>
                 </form>
-            </div>
-        </section>
-        <section class="container">
-            <div class="sec-two">
+            </section>
+            <section class="padding align-center about">
                 <div class="sub-container">
-                    <h2>Your <strong>Journey</strong> is our priority</h2>
-                    <p>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut asperiores dolorum, 
-                        eveniet quod officiis inventore reiciendis doloribus deleniti tempora 
-                        excepturi quo provident veritatis vero ipsa, vitae ipsum maxime labore unde?
-                    </p>
-                    <a href="#">Continue explore</a>
-                </div>
-            </div>
-        </section>
-        <section class="container flex">
-            <div class="flex-50 sec-three-left">
-                <img src="assets/tm-img-01.jpg" alt="">
-            </div>
-            <div class="flex-50 sec-three-right flex">
-                <i class="fas fa-chevron-circle-left"></i>
-                <i class="fas fa-chevron-circle-right"></i>
-                <div class="sec-three-right-div">
                     <h2>
-                        Europes most visited palves
+                        Your <strong>journey</strong> is our priority.
                     </h2>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem enim 
-                        molestias perferendis ut veritatis unde odio quaerat, nobis quibusdam, tempore placeat 
-                        velit voluptatibus numquam nihil delectus minima, eveniet ex nisi?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt non maiores esse, illum id eius aperiam placeat 
+                        aliquid tenetur? Ullam ipsam unde repellat nam blanditiis tempora, fuga obcaecati praesentium quas.
                     </p>
-                    <a href="#">Continue reading</a>
+                    <a class="btn btn-primary" href="#">Continue Explore</a>
                 </div>
-            </div>
-        </section>
-        <section class="container sec-four">
-            <div class="sub-container">
-                <div class="sec-four-one flex">
-                    <figure class="flex-20 sec-four-left">
-                        <img src="assets/tm-img-06.jpg" alt="">
-                    </figure>
-                    <div class="flex-60 sec-four-middle">
-                        <h3>
-                            Asia resort hotel
-                        </h3>
-                        <p>Singapore</p>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis laboriosam inventore 
-                            deleniti temporibus maxime eligendi dolor aliquid veniam.
-                        </p>
-                    </div>
-                    <div class="flex flex-20 sec-four-right">
-                        <img src="assets/button-curve.png" alt="">
-                        <div>
-                            <p>$440</p>
-                            <p>Continue reading</p>
+            </section>
+            <section class="">
+                <article class="flex">
+                    <div class="flex-actual-50 font-0 article-col-left">
+                        <img class="width-full" src="assets/tm-img-01.jpg" alt="">
+                        <div class="flex justify-end nav-btn-container">
+                            <div class="nav-btn">
+                                <i class="fas fa-chevron-circle-left"></i>
+                            </div>
+                            <div class="nav-btn">
+                                <i class="fas fa-chevron-circle-right"></i>
+                            </div>
                         </div>
                     </div>
+                    <div class="flex-50 article-col-right left">
+                        <h3>
+                            Europe's most visited places
+                        </h3>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta esse rerum eos eum eius optio aperiam cum! Quidem, 
+                            consequatur! Quas libero enim nisi adipisci, quod voluptatum. Sint incidunt doloremque omnis!
+                        </p>
+                        <a class="btn btn-secondary" href="#">Continue Reading</a>
+                    </div>
+                </article>
+                <article class="flex">
+                    <div class="flex-50 article-col-right right">
+                        <h3>
+                            Asia's most visited places
+                        </h3>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta esse rerum eos eum eius optio aperiam cum! Quidem, 
+                            consequatur! Quas libero enim nisi adipisci, quod voluptatum. Sint incidunt doloremque omnis!
+                        </p>
+                        <a class="btn btn-secondary" href="#">Continue Reading</a>
+                    </div>
+                    <div class="flex-actual-50 font-0 article-col-left">
+                        <img class="width-full" src="assets/tm-img-02.jpg" alt="">
+                        <div class="flex justify-end nav-btn-container-left">
+                            <div class="nav-btn">
+                                <i class="fas fa-chevron-circle-left"></i>
+                            </div>
+                            <div class="nav-btn">
+                                <i class="fas fa-chevron-circle-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="flex">
+                    <div class="flex-actual-50 font-0 article-col-left">
+                        <img class="width-full" src="assets/tm-img-03.jpg" alt="">
+                        <div class="flex justify-end nav-btn-container">
+                            <div class="nav-btn">
+                                <i class="fas fa-chevron-circle-left"></i>
+                            </div>
+                            <div class="nav-btn">
+                                <i class="fas fa-chevron-circle-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex-50 article-col-right left">
+                        <h3>
+                            America's most popular places
+                        </h3>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta esse rerum eos eum eius optio aperiam cum! Quidem, 
+                            consequatur! Quas libero enim nisi adipisci, quod voluptatum. Sint incidunt doloremque omnis!
+                        </p>
+                        <a class="btn btn-secondary" href="#">Continue Reading</a>
+                    </div>
+                </article>
+            </section>
+            <section class="flex maps">
+                <div class="grow align-center font-0">
+                    <img src="assets/north-america.png" alt="">
+                    <p>North America</p>
                 </div>
-            </div>
-        </section>
+                <div class="grow align-center font-0">
+                    <img src="assets/south-america.png" alt="">
+                    <p>South America</p>
+                </div>
+                <div class="grow align-center font-0">
+                    <img src="assets/europe.png" alt="">
+                    <p>Europe</p>
+                </div>
+                <div class="grow align-center font-0 active">
+                    <img src="assets/asia.png" alt="">
+                    <p>Asia</p>
+                </div>
+                <div class="grow align-center font-0">
+                    <img src="assets/africa.png" alt="">
+                    <p>Africa</p>
+                </div>
+                <div class="grow align-center font-0">
+                    <img src="assets/australia.png" alt="">
+                    <p>Australia</p>
+                </div>
+                <div class="grow align-center font-0">
+                    <img src="assets/antartica.png" alt="">
+                    <p>Antartica</p>
+                </div>
+            </section>
+            <section class="padding recommended">
+                <article class="flex recommended-item item-stretch">
+                    <div class="flex-30 font-0">
+                        <img class="width-full" src="assets/tm-img-06.jpg" alt="">
+                    </div>
+                    <div class="flex-actual-50 recommended-item-content">
+                        <h3>
+                            Asia Resort Hotel
+                        </h3>
+                        <h4>
+                            Singapore
+                        </h4>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat iure 
+                            ullam maxime officiis impedit nihil quisquam quo.
+                        </p>
+                        <img class="btn-curve" src="assets/button-curve.png" alt="">
+                    </div>
+                    <div class="flex-20 recommended-item-pricing align-center center column">
+                        <h4>$440</h4>
+                        <a href="#">Continue Reading</a>
+                    </div>
+                </article>
+                <article class="flex recommended-item item-stretch">
+                    <div class="flex-30 font-0">
+                        <img class="width-full" src="assets/tm-img-07.jpg" alt="">
+                    </div>
+                    <div class="flex-actual-50 recommended-item-content">
+                        <h3>
+                            Asia Resort Hotel
+                        </h3>
+                        <h4>
+                            Singapore
+                        </h4>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat iure 
+                            ullam maxime officiis impedit nihil quisquam quo.
+                        </p>
+                        <img class="btn-curve" src="assets/button-curve.png" alt="">
+                    </div>
+                    <div class="flex-20 recommended-item-pricing align-center center column">
+                        <h4>$440</h4>
+                        <a href="#">Continue Reading</a>
+                    </div>
+                </article>
+                <article class="flex recommended-item item-stretch">
+                    <div class="flex-30 font-0">
+                        <img class="width-full" src="assets/tm-img-04.jpg" alt="">
+                    </div>
+                    <div class="flex-actual-50 recommended-item-content">
+                        <h3>
+                            Asia Resort Hotel
+                        </h3>
+                        <h4>
+                            Singapore
+                        </h4>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat iure 
+                            ullam maxime officiis impedit nihil quisquam quo.
+                        </p>
+                        <img class="btn-curve" src="assets/button-curve.png" alt="">
+                    </div>
+                    <div class="flex-20 recommended-item-pricing align-center center column">
+                        <h4>$440</h4>
+                        <a href="#">Continue Reading</a>
+                    </div>
+                </article>
+                <article class="flex recommended-item item-stretch">
+                    <div class="flex-30 font-0">
+                        <img class="width-full" src="assets/tm-img-05.jpg" alt="">
+                    </div>
+                    <div class="flex-actual-50 recommended-item-content">
+                        <h3>
+                            Asia Resort Hotel
+                        </h3>
+                        <h4>
+                            Singapore
+                        </h4>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat iure 
+                            ullam maxime officiis impedit nihil quisquam quo.
+                        </p>
+                        <img class="btn-curve" src="assets/button-curve.png" alt="">
+                    </div>
+                    <div class="flex-20 recommended-item-pricing align-center center column">
+                        <h4>$440</h4>
+                        <a href="#">Continue Reading</a>
+                    </div>
+                </article>
+                <div class="align-center">
+                    <a class="btn btn-primary " href="#">Show more palces</a>
+                </div>
+            </section>
+            <section class="contact font-0">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13503.678733325312!2d76.3535986!3d32.2063948!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x71ff0cae0784712d!2sAltCampus%20Services%20Pvt.%20Ltd!5e0!3m2!1sen!2sin!4v1620457135199!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <div class="overlay"></div>
+                <form action="">
+                    <fieldset>
+                        <div class="flex">
+                            <input class="form-control flex-50" type="text" name="name" placeholder="Name">
+                            <input class="form-control flex-50" type="email" name="email" placeholder="Email">
+                        </div>
+                        <input class="form-control" type="text" name="subject" placeholder="Subject">
+                        <textarea class="form-control" name="message" placeholder="Message" rows="06"></textarea>
+                        <input class="btn btn-primary" type="submit" value="send message now">
+                    </fieldset>
+                </form>
+            </section>
+            <footer class="align-center">
+                <small>Copyright &copy; 2020 Your Company. Designed by Template Mo</small>
+            </footer>
+        </div>
     </main>
 </body>
 </html>
